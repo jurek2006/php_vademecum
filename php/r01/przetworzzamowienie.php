@@ -9,9 +9,9 @@
 	<h2>Wyniki zamówienia</h2>
 	<?php
 		// utwórz krótkie nazwy zmiennych
-		$iloscopon = $_POST['iloscopon'];
-		$iloscoleju = $_POST['iloscoleju'];
-		$iloscswiec = $_POST['iloscswiec'];
+		$iloscopon = htmlspecialchars($_POST['iloscopon']);
+		$iloscoleju = htmlspecialchars($_POST['iloscoleju']);
+		$iloscswiec = htmlspecialchars($_POST['iloscswiec']);
 
 		$ilosc = 0;
 		$ilosc = $iloscopon + $iloscoleju + $iloscswiec;
