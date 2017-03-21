@@ -26,6 +26,7 @@
 		<li>Rodział 2:</li>
 		<ul>
 			<li><a href="r02/orderform.html">Formularz</a></li>
+			<li><a href="r02/vieworders.php">Zobacz zamówienia</a></li>
 		</ul>
 	</ul>
 	<a href="test.php">Test</a>

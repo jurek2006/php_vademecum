@@ -1,6 +1,4 @@
 <?php
-	ini_set('display_errors', 1);
-	error_reporting(E_ALL);
 
 	// utwórz krótkie nazwy zmiennych
 	$iloscopon = (int) $_POST['iloscopon'];
@@ -8,6 +6,7 @@
 	$iloscswiec = (int)$_POST['iloscswiec'];
 	$adres = preg_replace('/\t|\R/', ' ', $_POST['adres']);
 	$document_root = $_SERVER['DOCUMENT_ROOT'];
+	$path = '../orders';
 	$date = date('H:i, jS F Y');
 ?>
 
@@ -21,8 +20,6 @@
 	<h1>Części samochodowe Janka</h1>
 	<h2>Wyniki zamówienia</h2>
 	<?php
-		ini_set('display_errors', 1);
-		error_reporting(E_ALL);
 
 		echo "<p>Zamówienie przetworzone " . date('H:i, jS F Y') . "</p>";
 		echo "<p>Szczegóły Twojego zamówienia:</p>";
@@ -68,7 +65,7 @@
 		$outputstring = $date . "\t" . $iloscopon . " opon\t" . $iloscoleju . " oleju\t" . $iloscswiec . " świec\t" . $wartosc . " zł\t" . $adres . "\n";
 
 		// otwarcie pliku do dodawania
-		@$fp = fopen("../orders/orders.txt", 'ab');
+		@$fp = fopen("$path/orders.txt", 'ab');
 
 		if(!$fp){
 			echo "<p><strong>Twoje zamówienie nie może być przetworzone w tym momencie. Proszę spróbuj później.</strong></p>";
