@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<title>Formularz</title>
+</head>
+<body>
+
+<form action="processorder.php" method=post>
+
+	<table style="border: 1px solid black">
+		<tr style="background-color: #CCC">
+			<td style="width: 150px">Produkt</td>
+			<td style="width: 15px">Ilość</td>
+		</tr>
+		<tr>
+			<td>Opony</td>
+			<td style="text-align: left;"><input type="text" name="iloscopon" size="3" maxlength="3" /></td>
+		</tr>
+		<tr>
+			<td>Olej</td>
+			<td style="text-align: left;"><input type="text" name="iloscoleju" size="3" maxlength="3" /></td>
+		</tr>
+		<tr>
+			<td>Świece zapłonowe</td>
+			<td style="text-align: left;"><input type="text" name="iloscswiec" size="3" maxlength="3" /></td>
+		</tr>
+		<tr>
+			<td>Adres</td>
+			<td style="text-align: left;"><input type="text" name="adres" size="30" maxlength="50" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center;"><input type="submit" value="Złóż zamówienie" /></td>
+		</tr>
+	</table>
+	
+</form>
+
+</body>
+</html>
