@@ -36,7 +36,13 @@
 				<li><a href="r03/vieworders_2.php">Zobacz zamówienia 2</a></li>
 			</ul>
 		</li>
+		<li>Testy:
+			<ul>
+				<li><a href="test_heredoc.php">Heredoc</a></li>
+				<li><a href="test_usort.php">Usort</a></li>
+			</ul>
+		</li>
 	</ul>
-	<a href="test.php">Test</a>
+	
 </body>
 </html>
