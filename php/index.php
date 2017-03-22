@@ -19,15 +19,23 @@
 	<h1>PHP Vademecum</h1>
 	<p>Ćwiczenia do książki</p> 
 	<ul>
-		<li>Rodział 1:</li>
-		<ul>
-			<li><a href="r01/formularz.html">Formularz</a></li>
-		</ul>
-		<li>Rodział 2:</li>
-		<ul>
-			<li><a href="r02/orderform.html">Formularz</a></li>
-			<li><a href="r02/vieworders.php">Zobacz zamówienia</a></li>
-		</ul>
+		<li>Rodział 1:
+			<ul>
+				<li><a href="r01/formularz.html">Formularz</a></li>
+			</ul>
+		</li>
+		<li>Rodział 2:
+			<ul>
+				<li><a href="r02/orderform.html">Formularz</a></li>
+				<li><a href="r02/vieworders.php">Zobacz zamówienia</a></li>
+			</ul>
+		</li>
+		<li>Rodział 3:
+			<ul>
+				<li><a href="r03/vieworders.php">Zobacz zamówienia</a></li>
+				<li><a href="r03/vieworders_2.php">Zobacz zamówienia 2</a></li>
+			</ul>
+		</li>
 	</ul>
 	<a href="test.php">Test</a>
 </body>
