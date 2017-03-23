@@ -96,9 +96,8 @@
   function podSort($x, $y, $element_str){
   // prosta podfunkcja sortująca do funkcji używanych w usort
   // $element_str określa klucz wg którego następuje sortowanie
-    if      ($x[$element_str] == $y[$element_str])  { return 0;}
-    elseif  ($x[$element_str] < $y[$element_str])    { return -1; }
-    else{ return 1;}
+
+    return $x[$element_str] <=> $y[$element_str];
   }
 
   function sortNazwisko($x, $y){
